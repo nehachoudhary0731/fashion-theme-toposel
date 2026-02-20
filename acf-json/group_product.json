@@ -1,0 +1,75 @@
+{
+    "key": "group_product",
+    "title": "Product Details",
+    "fields": [
+        {
+            "key": "field_product_price",
+            "label": "Price ($)",
+            "name": "price",
+            "type": "number",
+            "instructions": "Current selling price of the product",
+            "required": 1,
+            "default_value": "",
+            "placeholder": "49.99",
+            "min": 0,
+            "max": 99999,
+            "step": 0.01
+        },
+        {
+            "key": "field_product_original_price",
+            "label": "Original Price ($)",
+            "name": "original_price",
+            "type": "number",
+            "instructions": "Original price before discount (leave empty if no discount)",
+            "required": 0,
+            "placeholder": "99.99",
+            "min": 0,
+            "max": 99999,
+            "step": 0.01
+        },
+        {
+            "key": "field_product_sku",
+            "label": "SKU",
+            "name": "sku",
+            "type": "text",
+            "instructions": "Product SKU (Stock Keeping Unit)",
+            "required": 0,
+            "placeholder": "PRD-001"
+        },
+        {
+            "key": "field_product_stock",
+            "label": "Stock Status",
+            "name": "stock_status",
+            "type": "select",
+            "instructions": "Select stock status",
+            "required": 0,
+            "choices": {
+                "in_stock": "In Stock",
+                "out_of_stock": "Out of Stock",
+                "on_backorder": "On Backorder"
+            },
+            "default_value": "in_stock",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Product meta fields for pricing and inventory"
+}

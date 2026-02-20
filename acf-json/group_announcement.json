@@ -1,0 +1,48 @@
+{
+    "key": "group_announcement",
+    "title": "Announcement Bar Settings",
+    "fields": [
+        {
+            "key": "field_announcement_text",
+            "label": "Announcement Text",
+            "name": "announcement_text",
+            "type": "text",
+            "instructions": "Enter the text for the announcement bar (e.g., 'Free shipping on orders over $50')",
+            "required": 0,
+            "default_value": "Sign up and get 20% off your first order",
+            "placeholder": "Enter announcement text",
+            "prepend": "",
+            "append": "",
+            "maxlength": 100
+        },
+        {
+            "key": "field_show_announcement",
+            "label": "Show Announcement Bar",
+            "name": "show_announcement",
+            "type": "true_false",
+            "instructions": "Toggle to show/hide the announcement bar",
+            "message": "Enable announcement bar",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Visible",
+            "ui_off_text": "Hidden"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "homepage-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Settings for the top announcement bar"
+}
